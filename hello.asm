@@ -4,9 +4,8 @@ SECTION .DATA
 	helloLen:  equ $-hello
 
 ; Code goes in the text section
-SECTION .TEXT
+SECTION .text
 	GLOBAL _start 
-
 _start:
 	mov eax,4            ; 'write' system call = 4
 	mov ebx,1            ; file descriptor 1 = STDOUT
