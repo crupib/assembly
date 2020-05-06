@@ -1,0 +1,4 @@
+hello3: hello3.o
+	ld -m elf_x86_64 -o hello3 hello3.o
+hello3.o: hello3.asm
+	nasm -f elf64 -F dwarf -g hello3.asm 
