@@ -7,8 +7,8 @@
      5 00000018 204B69636B696E6721-
      5 00000021 0A00               
      6                                        msg2len equ $-msg2-1
-     7 00000023 6501000000000000              radius  dq  357
-     8 0000002B 1F85EB51B81E0940              pi      dq  3.14
+     7 00000023 6501000000000000              radius dq 357
+     8 0000002B 1F85EB51B81E0940              pi     dq 3.14
      9                                  section .bss
     10                                  section .text
     11                                  	global main
@@ -26,9 +26,9 @@
     22 00000029 48BE-                           mov  rsi, msg2
     22 0000002B [0F00000000000000] 
     23 00000033 BA13000000                      mov  rdx, msg2len
-    24 00000038 0F05                            syscall
+    24 00000038 0F05                            syscall 
     25 0000003A 4889EC                          mov  rsp,rbp
     26 0000003D 5D                              pop  rbp
-    27 0000003E B83C000000                      mov  rax,60
-    28 00000043 BF00000000                      mov  rdi,0
-    29 00000048 0F05                            syscall 
+    27 0000003E B83C000000                      mov  rax, 60
+    28 00000043 BF00000000                      mov  rdi, 0
+    29 00000048 0F05                            syscall
