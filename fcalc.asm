@@ -50,7 +50,7 @@ main:
         movsd   xmm1, [number2]
         mov     rax,3 ; three floats
         call    printf
-; division
+; division is good
         movsd   xmm2, [number1] ; double precision float into xmm
         divsd   xmm2, [number2] ; divide with xmm
 ; print the result
