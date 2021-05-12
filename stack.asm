@@ -9,9 +9,10 @@ section .bss
 section .text
       global main
 main:
+    mov rbp, rsp; for correct debugging
 push rbp
 mov  rbp,rsp
-; Print teh original string
+; Print the original string
     mov  rdi, fmt1
     mov  rsi, strng
     mov  rax, 0
