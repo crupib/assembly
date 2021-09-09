@@ -1,4 +1,5 @@
 ; stack.asm
+;---------------------------------
 extern printf
 section .data
       strng     db   "ABCDE",0
